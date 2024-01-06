@@ -308,12 +308,12 @@ p {
   display: flex;
   row-gap: 27px;
 }
-.navber_three .container .detail_list button{
+.navber_three .container .detail_list button {
   background: transparent;
   border: 0;
   padding: 0;
 }
-.navber_three .container .detail_list button a{
+.navber_three .container .detail_list button a {
   background: transparent;
   border: 0;
   font-family: "Quicksand", sans-serif;
@@ -591,7 +591,8 @@ p {
   transition: all linear 0.3s;
   opacity: 0;
   visibility: hidden;
-  display: flex; justify-content: space-between
+  display: flex;
+  justify-content: space-between;
 }
 .navber_three .container .mega .mega_detail .first_line ul {
   padding-left: 10px !important;
@@ -713,8 +714,9 @@ p {
 
 /* =====================header nav_three end=========================== */
 
-.call_number ::placeholder {
+.call_number {
   color: #3bb77e;
+  margin-left: 5px;
 }
 .call_number input {
   margin-left: 5px;
@@ -754,9 +756,9 @@ p {
 .nicher_margin {
   margin-bottom: 50px;
 }
-.navber_three .container .mega .mega_detail .first_line{
+.navber_three .container .mega .mega_detail .first_line {
   width: 449px;
 }
-.head_phn i{
-  font-size: 40px
+.head_phn i {
+  font-size: 40px;
 }
