@@ -27,13 +27,12 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-#first_line .navbar .one .nav-item a {
+#first_line .navbar .one .nav-item {
   color: #7e7e7e;
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 13px;
-  margin-inline-end: 20px;
   position: relative;
   padding-inline: 0;
   padding-block: 5px;
@@ -51,11 +50,16 @@ p {
 #first_line .navbar .one .nav-item {
   position: relative;
 }
+.abar_jontrona_fix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #first_line .navbar .one .nav-item::after {
   content: "";
   position: absolute;
-  right: 10px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 1px;
@@ -145,13 +149,6 @@ p {
   cursor: pointer;
 }
 
-#second_line .icon .text P {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #7e7e7e;
-}
 #second_line .became .text .phone_icon i {
   color: #3bb77e;
   font-size: 16px;
@@ -172,7 +169,7 @@ p {
   position: absolute;
   left: -100px;
   bottom: -100%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 70%);
   width: 388px;
   height: 68px;
   background: rgb(255, 255, 255);
@@ -185,7 +182,7 @@ p {
   z-index: 999;
   transition: all linear 0.3s;
 }
-#second_line .icon .cart:hover + .chat {
+#second_line .icon a:hover + .chat {
   opacity: 1;
   cursor: pointer;
   visibility: inherit;
@@ -203,7 +200,7 @@ p {
   position: absolute;
   left: 10px;
   bottom: -100%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 70%);
   width: 200px;
   height: 85px;
   background: rgb(255, 255, 255);
@@ -213,21 +210,27 @@ p {
   line-height: 68px;
   opacity: 0;
   visibility: hidden;
-  transition: all linear 0.3s;
+  transition: all linear 0.5s;
 }
-#second_line .icon .account:hover + .login {
+#second_line .icon a:hover + .login {
   opacity: 1;
   cursor: pointer;
   visibility: inherit;
 }
-#second_line .icon .login p {
+#second_line .icon .login a p {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #7e7e7e;
 }
-
+#second_line .icon .text P {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7e7e7e;
+}
 #second_line .icon i {
   font-size: 26px;
   color: #253d4e;
@@ -371,7 +374,7 @@ p {
   align-items: center;
   flex-direction: column;
 }
-.navber_three .container .center .text h3 {
+.navber_three .container .center .text a h3 {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -381,7 +384,7 @@ p {
   margin-bottom: 0;
   transition: all linear 0.3s;
 }
-.navber_three .container .center .text:hover h3 {
+.navber_three .container .center .text a:hover h3 {
   color: #fd2868;
 }
 .navber_three .container .center .text p {
@@ -729,9 +732,11 @@ p {
   align-items: center;
   column-gap: 10px;
 }
-#second_line .icon .text {
+#second_line .icon .text a {
   display: flex;
   column-gap: 13px;
+  justify-content: center;
+  align-items: center;
 }
 #second_line .icon .n_text {
   position: relative;
